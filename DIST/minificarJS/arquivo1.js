@@ -1,0 +1,1 @@
+$("nav.mobile").click(function () { var a = $("nav.mobile ul"), s = $(".botao-menu-mobile").find("i"); 1 == a.is(":hidden") ? (s.removeClass("fa-bars"), s.addClass("fa-times")) : (s.removeClass("fa-times"), s.addClass("fa-bars")), a.slideToggle() });

@@ -1,0 +1,55 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: black;
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 100px;
+    position: absolute;
+    color: black;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+h1::before {
+    content: 'José Vitor';
+    position: absolute;
+    left: 0px;
+    color: black;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    border-radius: 20px;
+    animation: animacao 2s alternate;
+    transition: 2s;
+    transform: translate(-20px, -20px);
+    z-index: -1;
+    opacity: .30;
+}
+
+h1::after {
+    content: 'José Vitor';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    color: black;
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 70%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    transform: translate(-30px, -30px);
+    z-index: -1;
+    opacity: .2;
+}
